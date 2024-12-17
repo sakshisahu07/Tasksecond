@@ -30,12 +30,12 @@ const InsertProduct = () => {
     // Prepare the form data for image upload
     const formData = new FormData();
     formData.append('file', myimage);
-    formData.append('upload_preset', 'First_Preset'); // Your upload preset
-    formData.append('cloud_name', 'dzbnmvkoz'); // Your cloud name
+    formData.append('upload_preset', 'My cloud'); // Your upload preset
+    formData.append('cloud_name', 'dsjqshmjc'); // Your cloud name
 
     try {
       // Upload the image to Cloudinary
-      const imageResponse = await axios.post('https://api.cloudinary.com/v1_1/dzbnmvkoz/image/upload', formData);
+      const imageResponse = await axios.post('https://api.cloudinary.com/v1_1/dsjqshmjc/image/upload', formData);
 
       // After uploading the image, send the product data
       const productData = { ...input, image: imageResponse.data.url };

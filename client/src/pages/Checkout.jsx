@@ -12,7 +12,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
 // Load Stripe with your public key
-const stripePromise = loadStripe("pk_test_51QWwzu02vwTVClLcZB1WSJoVUn0ouJJrkgxJlhryu8T2Luzb2071a1CF152jTjyVcC9YFH16yYd518q7G4xwGfYV00GccIYdAV");
+const stripePromise = loadStripe("pk_test_51QWjrFFK6pRUMCyw2qImuLU7VC4PjWQZGBLGskvQiWMnGS52lB7jcvp1BoYgd3fT8O8AnBZHoMVC4m7iipMcEHDA00wrr4IFsp");
 
 const CheckoutForm = ({ totalAmount, products }) => {
   const stripe = useStripe();

@@ -31,7 +31,7 @@ app.use("/api/payment", paymentRoute);
 
 // MongoDB Connection
 mongoose
-  .connect(process.env.DBCON, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.DBCON)
   .then(() => console.log("Connected to MongoDB!!!"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
